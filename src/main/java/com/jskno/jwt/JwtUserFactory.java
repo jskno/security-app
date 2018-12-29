@@ -9,7 +9,7 @@
  *     * . _ . *
  */
 //@formatter:on
-package com.jskno.business;
+package com.jskno.jwt;
 
 import com.jskno.persistence.Authority;
 import com.jskno.persistence.User;

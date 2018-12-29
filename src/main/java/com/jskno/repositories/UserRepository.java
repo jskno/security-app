@@ -9,22 +9,17 @@
  *     * . _ . *
  */
 //@formatter:on
-package com.jskno.business.service;
+package com.jskno.repositories;
 
-import java.io.Serializable;
+import com.jskno.persistence.User;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 
 /**
  * Created by Jose on 18/11/17.
  */
-public class JwtAuthenticationResponse implements Serializable {
 
-    private final String token;
-
-    public JwtAuthenticationResponse(String token) {
-        this.token = token;
-    }
-
-    public String getToken() {
-        return token;
-    }
+@Repository
+public interface UserRepository extends CrudRepository<User, Long> {
+    User findByUsername(String username);
 }

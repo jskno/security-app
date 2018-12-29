@@ -9,7 +9,7 @@
  *     * . _ . *
  */
 //@formatter:on
-package com.jskno.business;
+package com.jskno.jwt;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.security.core.GrantedAuthority;

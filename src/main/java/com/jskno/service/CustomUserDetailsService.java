@@ -9,11 +9,11 @@
  *     * . _ . *
  */
 //@formatter:on
-package com.jskno.business.service;
+package com.jskno.service;
 
-import com.jskno.business.JwtUserFactory;
+import com.jskno.jwt.JwtUserFactory;
 import com.jskno.persistence.User;
-import com.jskno.persistence.repository.UserRepository;
+import com.jskno.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -24,7 +24,7 @@ import org.springframework.stereotype.Service;
  * Created by Jose on 18/11/17.
  */
 @Service
-public class JwtUserDetailsServiceImpl implements UserDetailsService {
+public class CustomUserDetailsService implements UserDetailsService {
 
     @Autowired
     private UserRepository userRepository;
